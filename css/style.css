@@ -1,0 +1,97 @@
+body{
+    background-color: #ddd;
+}
+.container h1{
+    text-align: center;
+    font-family: "Lato", sans-serif;
+    font-size: 40px;
+    background-color: #282e34;
+    color: #fff;
+    padding: 20px;
+}
+.container {
+    width: 600px;
+    height: 500px;
+    margin: 0 auto;
+}
+#fila1 .trial {
+    display: flex;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    
+    position: relative;
+    margin: 10px 10px 10px 10%;
+    display: inline-block;
+
+}
+#fila2 .trial {
+    display: flex;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    
+    position: relative;
+    margin: 10px 10px 10px 5%;
+    display: inline-block;
+}
+#fila3 .trial {
+    display: flex;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    
+    position: relative;
+    margin: 10px 10px 10px 5%;
+    display: inline-block;
+}
+
+#turn {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+}
+
+.candle img{
+    width: 100px;
+    height: 100px;
+}
+
+#player{
+    font-size: 25px;
+    font-family: "Lato", sans-serif;
+}
+
+#btn{
+        display: inline-block;
+        text-decoration: none;
+        padding: 5px 20px;
+        border: #222 2px solid;
+        opacity: 0;
+        animation-name:btn;
+        animation-delay: 0s;
+        animation-fill-mode: forwards;
+        color:white;
+        background-color: #282e34;
+        transition-property: transform;
+        transition-duration: 2s;
+    }
+    
+    #btn:hover{
+        transform: rotateY(360deg);
+    }
+    
+    @keyframes btn{
+        0% {opacity:1}
+        100% {opacity:1}
+    }
+
+
+@media(max-width:568px){
+    .container{
+        margin: 0 0 0 0;
+    }
+}

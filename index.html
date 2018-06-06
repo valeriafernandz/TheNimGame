@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>THE NIM GAME</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="icon" href="img/lightcandle.png" type="image/x-icon"/>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1 class="animated bounceInDown">THE NIM GAME</h1>
+        <div id="fila1">
+            <div class="trial">
+                <img src="img/lightcandle.png" class="candle" class="candle"onclick="candleClick(event,this)" id="1"  alt="">
+            </div>
+            <div  class="trial">
+                    <img src="img/lightcandle.png" class="candle" onclick="candleClick(event,this)" id="2" alt="">
+            </div>
+            <div class="trial">
+                    <img src="img/lightcandle.png" class="candle"onclick="candleClick(event,this)" id="3"  alt="">
+            </div>
+        </div>
+        <div id="fila2">
+            <div class="trial" >
+                    <img src="img/lightcandle.png" class="candle"onclick="candleClick(event,this)" id="4"  alt="">
+            </div>
+            <div  class="trial" >
+                    <img src="img/lightcandle.png" class="candle"onclick="candleClick(event,this)" id="5" alt="">
+            </div>
+            <div  class="trial" >
+                    <img src="img/lightcandle.png" class="candle"onclick="candleClick(event,this)" id="6" alt="">
+            </div>
+            <div class="trial">
+                    <img src="img/lightcandle.png" class="candle"onclick="candleClick(event,this)"  id="7" alt="">
+            </div>
+        </div>
+        <div id="fila3">
+            <div  class="trial" >
+                    <img src="img/lightcandle.png" class="candle"onclick="candleClick(event,this)" id="8" alt="">
+            </div>
+            <div class="trial" >
+                    <img src="img/lightcandle.png" class="candle"onclick="candleClick(event,this)" id="9" alt="">
+            </div>
+            <div  class="trial">
+                    <img src="img/lightcandle.png" class="candle"onclick="candleClick(event,this)" id="10" alt="">
+            </div>
+            <div  class="trial" >
+                    <img src="img/lightcandle.png" class="candle"onclick="candleClick(event,this)" id="11" alt="">
+            </div>
+        </div>
+
+    </div>
+    <div id="turn">
+        <h2 id="player"> Player: </h2>
+        <button id="btn" onclick="playMove()">DONE!</button>
+    </div>
+
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
